@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class EventService {
 
-	private _eventsUrl = 'http://localhost:5000/api/events'
-	private _specialEventsUrl = 'http://localhost:5000/api/special'
+	private _eventsUrl = '/api/events'
+	private _specialEventsUrl = '/api/special'
 	constructor(private http: HttpClient) { }
 
 	getEvents() {
